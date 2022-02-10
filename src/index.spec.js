@@ -104,6 +104,7 @@ describe('Board 요구사항 테스트', () => {
         });
         noticeBoard.publish(article);
 
+        //"공지사항-id값"
         // 규칙은 ${board.name}-${랜덤 값} 를 따른다.
         expect(article.id.startsWith('공지사항-')).toBe(true);
     });
